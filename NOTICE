@@ -1,0 +1,24 @@
+SO-101 to PiPER Local Teleoperation
+
+This distribution extracts the locally developed SO-101/PiPER bridge from an
+XLeRobot/LeRobot development checkout. New portable packaging and documentation
+are provided under the Apache License, Version 2.0.
+
+The upstream checkout's Apache-2.0 license and original Hugging Face copyright
+notice are preserved in LICENSE. LeRobot itself is an optional dependency,
+not vendored here. LeRobot is copyright the Hugging Face team and contributors,
+licensed under Apache-2.0: https://github.com/huggingface/lerobot
+
+The CAN wire format was implemented with reference to AgileX's piper_sdk
+(protocol v2, source revision c9e8a281) and Agilex-College examples:
+https://github.com/agilexrobotics/piper_sdk
+https://github.com/agilexrobotics/Agilex-College
+
+SocketCAN error decoding references Linux v6.8 gs_usb.c / can/error.h and
+candleLight firmware v2.0 src/can.c. Those projects retain their own licenses;
+no Linux or candleLight C source is bundled in this distribution.
+https://github.com/torvalds/linux
+https://github.com/candle-usb/candleLight_fw
+
+PiPER and AgileX are names of their respective owners. This project is an
+independent integration and is not an official manufacturer release.
